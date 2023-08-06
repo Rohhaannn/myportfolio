@@ -27,44 +27,22 @@ section {
   font-family: 'Poppins', sans-serif;
 }
 
+.skills .max-width .title {
+  position: relative;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 60px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 .skills .skills-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
-section .title {
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-section .title::before {
-  content: "";
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  width: 300px;
-  height: 3px;
-  background: #111;
-  transform: translateX(-50%);
-}
-
-section .title::after {
-  position: absolute;
-  bottom: -12px;
-  left: 50%;
-  font-size: 20px;
-  color: #7952b3;
-  padding: 5px;
-  background: #fff;
-  transform: translateX(-50%);
-}
 
 /* Skills content 2nd page styling */
 
@@ -73,7 +51,7 @@ section .title::after {
   padding: 50px;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
+  
 }
 
 .skills .skills-content .container .box .name {
@@ -100,6 +78,7 @@ section .title::after {
   width: 450px;
   object-fit: contain;
   border-radius: 6px;
+  transition: scale 400ms;
 }
 
 
@@ -119,9 +98,7 @@ section .title::after {
 .skills .skills-content .container img:hover{
   text-align: center;
   object-fit: contain;
-  transform: scale(1.45) rotate(360deg);
-  transition: all 0.3s ease-in-out;
-  
+  scale: 110%;
 }
 
 .skills .skills-content .container .name {
@@ -154,7 +131,6 @@ section .title::after {
   text-align: justify;
 }
 
-
 /* button */
 .skills .skills-content a {
   display: inline-block;
@@ -164,6 +140,7 @@ section .title::after {
   font-weight: 400;
   padding: 8px 16px;
   margin-top: 20px;
+  margin-bottom: 50px;
   margin-left: 450px;
   border-radius: 6px;
   border: 2px solid #7952b3;
@@ -207,22 +184,23 @@ section .title::after {
     width: 450px;
     object-fit: contain;
     border-radius: 6px;
+    transition: scale 400ms;
+
   }
   
   .skills .skills-content  .container {
     margin: auto;
   }
 
-  .skills .skills-content  .container .box{
+  .skills .skills-content .container .box{
     height: 80px;
     width: 80px;
   }
   
-  .skills .skills-content  .container img:hover {
+  .skills .skills-content .container img:hover {
     text-align: center;
     object-fit: contain;
-    transform: scale(1.50) rotate(360deg);
-    transition: all 0.3s ease-in-out;
+    scale: 110%;
     color: #7952b3;
   }
 
@@ -242,11 +220,12 @@ section .title::after {
     align-items: center;
     margin-left: 25px;
   }
-  .skills .skills-content  img{
+  .skills .skills-content img{
     justify-content: center;
     margin: auto;
     height: 80px;
     width: 297px; 
+    transition: scale 400ms;
   }
 
   .skills .skills-content  .container .box{
@@ -257,8 +236,7 @@ section .title::after {
   .skills .skills-content .container img:hover {
     text-align: center;
     object-fit: contain;
-    transform: scale(1.50) rotate(360deg);
-    transition: all 0.3s ease-in-out;
+    scale: 110%;
     color: #7952b3;
   }
   .skills .skills-content a {
@@ -286,6 +264,7 @@ section .title::after {
     width: 450px;
     object-fit: contain;
     border-radius: 6px;
+    transition: scale 400ms;
   }
 
 
@@ -304,8 +283,7 @@ section .title::after {
   .skills .skills-content .container img:hover {
     text-align: center;
     object-fit: contain;
-    transform: scale(1.50) rotate(360deg);
-    transition: all 0.3s ease-in-out;
+    scale: 110%;
     color: #7952b3;
   }
 
