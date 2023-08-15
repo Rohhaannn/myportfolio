@@ -78,7 +78,7 @@ html {
 
 .navbar .menu li a {
   display: block;
-  color: #fff;
+  color: black;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -97,7 +97,7 @@ html {
 
 /* ======================= menu btn styling ======================= */
 .menu-btn {
-  color: #fff;
+  color: black;
   font-size: 23px;
   cursor: pointer;
   display: none;
@@ -303,9 +303,16 @@ section {
     text-align: center;
     padding-top: 80px;
     transition: all 0.3s ease;
+  }
+
+  .navbar .menu li a {
     color: #fff;
   }
 
+  .navbar.sticky::before .menu-btn {
+    color: #fff;
+  }
+  
   .navbar.sticky .menu-btn {
     color: #fff;
   }
